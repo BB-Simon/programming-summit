@@ -6,7 +6,7 @@
 
 :root {
   --black: #272a31;
-  --white: #ffffff;
+  --white: #fff;
   --orange: #ec5242;
   --gray: #dedede;
 }
@@ -16,7 +16,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
 }
 
@@ -96,6 +103,16 @@ a {
 
 .nav-item {
   margin-left: 34px;
+}
+
+.menu-item > a {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: var(--gray);
+  cursor: pointer;
 }
 
 .nav-item > a {
@@ -252,7 +269,6 @@ a {
 .main-program-wrapper {
   width: 100%;
   padding: 50px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +348,6 @@ a {
 .feature-wrapper {
   width: 100%;
   padding: 50px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,7 +430,6 @@ a {
 .partners-wrapper {
   width: 100%;
   padding: 50px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,10 +459,9 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-
 }
 
-footer p {
+.footer > p {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -560,6 +573,7 @@ footer p {
 .modal-nav {
   width: 100%;
   padding: 20px;
+
   /* display: flex;
   flex-direction: column; */
 }
@@ -584,26 +598,18 @@ footer p {
   margin-bottom: 20px;
 }
 
-.menu-item a {
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0.1px;
-  color: var(--gray);
-  cursor: pointer;
-}
-
 .blur-bg {
   filter: blur(6px);
   transition: blur 0.3s linear;
 }
 
 /* ******************************************** */
+
 /* ************* Media Queries **************** */
+
 /* ******************************************** */
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   /* Header banner */
   .header {
     padding: 0;
@@ -699,7 +705,6 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 30px;
-
   }
 
   /* About Page */

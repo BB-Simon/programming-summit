@@ -104,10 +104,9 @@ function createSpeakerHtml(speaker) {
       <div class="speaker-divder"></div>
       <p class="speaker-description">${speaker.description}</p>
     </div>
-  `
+  `;
   speakerItem.innerHTML = html;
   speakerContainer.appendChild(speakerItem);
 }
 
 speakers.forEach((speaker) => createSpeakerHtml(speaker));
-
