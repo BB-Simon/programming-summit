@@ -78,6 +78,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://bb-simon.github.io/programming-summit/)
+- [Video Presentaion of the Porject](https://www.loom.com/share/9415ea7eac4b4258ac6bb3c2d22f5a77)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
