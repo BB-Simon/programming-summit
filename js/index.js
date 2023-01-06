@@ -1,57 +1,57 @@
 const speakers = [
   {
     id: 1,
-    name: '',
+    name: 'SohYeong Noh',
     title: 'Brekmen Professor of Entrepreneuial Studies at Harvard Low Schoo',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `SohYeong Noh is sit amet consectetur adipisicing elit. Corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker1.png',
   },
   {
     id: 2,
-    name: '',
+    name: 'Yochai Beankler',
     title: 'Director of Art Center Nabi and a board member of IPS Koria',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `Yochai Beankler is consectetur adipisicing elit. Corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker2.png',
   },
   {
     id: 3,
-    name: '',
+    name: 'Lila Tretikov',
     title: 'Executive Director of the Wikimedia Foundation',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `Lila Tretikov is adipisicing elit. Corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker4.png',
   },
   {
-    id: 3,
-    name: '',
+    id: 4,
+    name: 'Kilnam Chon',
     title: 'Executive Director of the Wikimedia Foundation',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `Kilnam Chon is adipisicing elit. Corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker3.png',
   },
   {
-    id: 3,
-    name: '',
+    id: 5,
+    name: 'Julia Leda',
     title: 'President of Young Pirates of Europe',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `Julia Leda is corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker6.png',
   },
   {
-    id: 3,
-    name: '',
+    id: 6,
+    name: 'Ryan Merkley',
     title: 'CEO of Creative Commons. ex COO of the Mozilla Foundation',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, 
+    description: `Ryan Merkley is dolor sit amet consectetur adipisicing elit. Corrupti, 
                 alias! Ad quibusdam quam fugiat doloribus commodi enim 
                 sapiente corrupti quidem impedit, voluptatum, provident vitae at.`,
-    image: '',
+    image: './assets/images/speaker5.png',
   },
 ];
 
@@ -84,3 +84,30 @@ menuCloseBtn.addEventListener('click', closeMenuModal);
 listItems.forEach((item) => {
   item.addEventListener('click', closeMenuModal);
 });
+
+/** *******************************************
+************* Dynamic Featured section ********
+********************************************* */
+const speakerContainer = document.getElementById('speakers');
+
+function createSpeakerHtml(speaker) {
+  const speakerItem = document.createElement('li');
+  speakerItem.classList.add('speaker-item');
+
+  const html = `
+    <div class="image-wrapper">
+      <img src=${speaker.image} alt="Speaker">
+    </div>
+    <div>
+      <h3 class="speaker-name">${speaker.name}</h3>
+      <span class="speaker-title">${speaker.title}</span>
+      <div class="speaker-divder"></div>
+      <p class="speaker-description">${speaker.description}</p>
+    </div>
+  `
+  speakerItem.innerHTML = html;
+  speakerContainer.appendChild(speakerItem);
+}
+
+speakers.forEach((speaker) => createSpeakerHtml(speaker));
+

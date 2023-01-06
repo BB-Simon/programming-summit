@@ -85,8 +85,7 @@ a {
   height: 64px;
   background: var(--white);
   padding: 12px 140px;
-  /* box-shadow: 0 1px var(--white); */
-  /* box-shadow: 5px 1px 5px #aaaaaa; */
+  box-shadow: 3px 1px 3px var(--gray);
   display: none;
 }
 
