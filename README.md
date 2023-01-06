@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h3><b>My Portfolio</b></h3>
+  <h3><b>Module One Capstone Project: IPS Programming Summit 2023</b></h3>
 
 </div>
 
@@ -19,24 +19,25 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Portfolio] <a name="about-project"></a>
+# 📖 [IPS programming summit 2023] <a name="about-project"></a>
 
-> This is my simple portfolio project which tells you all about, who am i? what do i do? what i like? etc .
+> This is module one capstone project, IPS programming summit 2023 is an AI driven IPS pnternational programming Summit is the premiere global programming gethering conducted by and for the world’s programmers.
 
-**[My Portfolio]** is a...
+**[IPS programming summit 2023]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> simple portfolio project, built with html5 and css3 including linter configurattion.
+> Simple html5, css3 with smapp basic js DOM project with linter configeration.
 
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://github.com/BB-Simon/">yml for linters</a></li>
-    <li><a href="https://www.w3schools.com/html/">html</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.w3schools.com/js/default.asp">JS</a></li>
   </ul>
 </details>
 
@@ -44,19 +45,31 @@
 
 ### Key Features <a name="key-features"></a>
 
-> simple portfolio project, built with html5 and css3 including linter configurattion.
+> Simple html5, css3 with smapp basic js DOM project with linter configeration.
 
 - **[Set up linters]**
+- **[Home Page]**
 - **[Add navigation bar for mobile version]**
 - **[Add intro header section for mobile version]**
-- **[Add my works section for mobile version]**
-- **[Add about me section for mobile version]**
-- **[Add contact me section for mobile version]**
+- **[Add Main Program section for mobile version]**
+- **[Add Featured Speakers Section for mobile version]**
+- **[Add Partners Section for mobile version]**
 - **[Add navigation bar for desktop version]**
 - **[Add intro header section for desktop version]**
-- **[Add my works section for desktop version]**
-- **[Add about me section for desktop version]**
-- **[Add contact me section for desktop version]**
+- **[Add Main Program section for desktop version]**
+- **[Add Featured Speakers section for desktop version]**
+- **[Add Partners Section for desktop version]**
+- **[Add Footer for desktop version]**
+- **[About Page]**
+- **[Add navigation bar for mobile version]**
+- **[Add intro header section for mobile version]**
+- **[Add IPS Summit 2023 Logo Section for mobile version]**
+- **[Add See the past IPS Global Summit Section for mobile version]**
+- **[Add intro header section for desktop version]**
+- **[Add IPS Summit 2023 Logo Section section for desktop version]**
+- **[Add See the past IPS Global Summit section for desktop version]**
+- **[Add Partners Section for desktop version]**
+- **[Add Footer for desktop version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +77,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/BB-Simon/portfolio)
+- [Live Demo Link](https://bb-simon.github.io/programming-summit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,6 +97,6 @@
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse team for providing such a nice figma protype:)
+Coded by Simon ♥ at 01-06-2023 for microverse first module capstone project, all assets are taken from internet <strong>unsplash.com</strong> and design idea has taken from CC Global Summit 2015 by <strong>Cindy Shin</strong>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
