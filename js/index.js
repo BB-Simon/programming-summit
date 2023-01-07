@@ -96,9 +96,10 @@ function createSpeakerHtml(speaker) {
 
   const html = `
     <div class="image-wrapper">
-      <img src=${speaker.image} alt="Speaker">
+      <img class="pattern" src="./assets/icons/image-pattern.png" alt="Image Pattern">
+      <img class="speaker-img" src=${speaker.image} alt="Speaker">
     </div>
-    <div>
+    <div class="speaker-info">
       <h3 class="speaker-name">${speaker.name}</h3>
       <span class="speaker-title">${speaker.title}</span>
       <div class="speaker-divder"></div>
