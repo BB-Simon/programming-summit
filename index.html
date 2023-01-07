@@ -16,28 +16,32 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/styles.css">
+
+  <!-- Font awesome kit -->
+  <script src="https://kit.fontawesome.com/c33bd2f204.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="banner">
       <ul class="banner-list">
-        <li class="banner-item"><a href="#">one</a></li>
-        <li class="banner-item"><a href="#">one</a></li>
+        <li class="banner-item"><a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a></li>
+        <li class="banner-item"><a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a></li>
         <li class="banner-item"><a href="#">English</a></li>
         <li class="banner-item"><a href="#">My Page</a></li>
         <li class="banner-item"><a href="#">Logout</a></li>
       </ul>
     </div>
     <nav class="navbar">
-      <a href="/" class="logo">
-        IPS Programming
-        <br>
-        Summit 2023
-
+      <a href="https://bb-simon.github.io/programming-summit/">
+        <img src="./assets/logo.png" alt="IPS Logo">
       </a>
       <ul class="nav-list">
-        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="./about.html">About</a></li>
         <li class="nav-item"><a href="#">Program</a></li>
         <li class="nav-item"><a href="#">Join</a></li>
         <li class="nav-item"><a href="#">Sponsor</a></li>
@@ -45,10 +49,13 @@
         <li class="nav-item"><a href="#">IPS Campaing</a></li>
       </ul>
     </nav>
+
+    <!-- Mobile menu icon -->
+    <i id="menu-icon" class="fa-sharp fa-solid fa-bars"></i>
   </header>
 
   <!-- Main Content -->
-  <main class="container">
+  <main id="main-content" class="container">
     <!-- Header Section -->
     <section class="section-header">
       <article>
@@ -63,7 +70,99 @@
         </div>
       </article>
     </section>
+
+    <!-- Section main program -->
+    <section class="section-main-program">
+      <article class="main-program-wrapper">
+        <h3 class="main-program-title">Main Program</h3>
+        <div class="divider"></div>
+        <ul class="programs-list">
+          <li class="program-item">
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h3>Licture</h3>
+            <p>Listen to the speakers from various countries about the message of sharing and opening.</p>
+          </li>
+          <li class="program-item">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>IPS Exhibition</h3>
+            <p>Listen to the speakers from various countries about the message of sharing and opening.</p>
+          </li>
+          <li class="program-item">
+            <i class="fa-solid fa-users"></i>
+            <h3>Forum</h3>
+            <p>Listen to the speakers from various countries about the message of sharing and opening.</p>
+          </li>
+          <li class="program-item">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h3>Workshop</h3>
+            <p>Listen to the speakers from various countries about the message of sharing and opening.</p>
+          </li>
+          <li class="program-item">
+            <i class="fa-solid fa-gear"></i>
+            <h3>IPS Ignite</h3>
+            <p>Listen to the speakers from various countries about the message of sharing and opening.</p>
+          </li>
+        </ul>
+        <a class="see-more-link" href="https://bb-simon.github.io/programming-summit/"> See Whole Program</a>
+      </article>
+    </section>
+
+    <!-- Section features -->
+    <section class="feature-section">
+      <article class="feature-wrapper">
+        <h3 class="main-program-title feature-title">Featured Speakers</h3>
+        <div class="divider"></div>
+        <ul id="speakers" class="speaker-list">
+          <!-- Here speaker dyanmic will come once page loaded -->
+        </ul>
+      </article>
+    </section>
+
+    <!-- Section Partners -->
+    <section class="section-partners">
+      <article class="partners-wrapper">
+        <h3 class="main-program-title">Partners</h3>
+        <div class="divider"></div>
+        <div class="logo-gallery">
+          <img src="./assets/images/mozila.png" alt="Mozila">
+          <img src="./assets/images/gogole.png" alt="Google">
+          <img src="./assets/images/aribnb.png" alt="Airbnb">
+          <img src="./assets/images/stack.png" alt="Stackoverflow">
+          <img src="./assets/images/meta.png" alt="Meta">
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://bb-simon.github.io/programming-summit/">
+        <img src="./assets/logo.png" alt="IPS Logo">
+      </a>
+      <div>
+        <p>2033 IPS international programming summit. some rights reserved</p>
+        <p>Coded by Simon &hearts; at 01-06-2023 for microverse first module capstone project, all assets taken from internet and design idea has taken from CC Global Summit 2015 by <strong>Cindy Shin</strong></p>
+      </div>
+    </footer>
   </main>
 
+  <!-- Mobile modal nemu -->
+  <section id="menu-modal" class="modal-container">
+    <nav class="modal-nav">
+      <div class="close-icon-wrapper">
+        <i id="close-icon" class="fa-solid fa-xmark"></i>
+      </div>
+    
+      <ul class="menu-items-wrapper">
+        <li class="menu-item"><a href="./about.html">About</a></li>
+        <li class="menu-item"><a href="https://bb-simon.github.io/programming-summit/">Program</a></li>
+        <li class="menu-item"><a href="https://bb-simon.github.io/programming-summit/">Join</a></li>
+        <li class="menu-item"><a href="https://bb-simon.github.io/programming-summit/">Sponsor</a></li>
+        <li class="menu-item"><a href="https://bb-simon.github.io/programming-summit/">News</a></li>
+        <li class="menu-item"><a href="https://bb-simon.github.io/programming-summit/">IPS Campaing</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
